@@ -1,0 +1,46 @@
+/* this is a css comment */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+header,footer{
+    background-color: rgba(41, 49, 68, 0.821);
+}
+
+header,footer{
+    color: rgb(9, 103, 197);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: 0;
+    text-align: left;
+}
+a:link {
+    text-decoration: none;
+  }
+  
+  a:link {
+    
+    background-color: rgb(201, 219, 173);
+  }
+  
+  a:hover {
+    background-color: lightgreen;
+  }
+
+#my-image{
+    box-shadow: 2px 1px black;
+}
+
+ul.b {
+    list-style-type: square;
+  }
+
+  ul.b :nth-child(odd) {
+    background: rgba(144, 145, 149, 0.445);
+  }
+
+ 
