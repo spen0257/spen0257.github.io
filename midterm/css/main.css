@@ -1,1 +1,81 @@
-hi {
+body{
+  background-color:#aad4cf; 
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.wrapper{
+    width: 1000px;
+    margin:0 auto;
+    background-color: azure;
+    padding: 8px;
+  }
+  
+  .container {
+    position: relative;
+  }
+  .center{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  img {
+  width: 100%;
+  height: auto;
+  }
+<!-- nav -->
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+
+
+
+
+
+  /*.img {
+    width: 200px;
+    float: left;
+    margin:0 auto; 
+  }
+{
+    text-align: justify;
+}*/
+
+
+
+
+
+
+
+
+
+/* remember to leave notes */
+
+
+   /* https://imdac.github.io/modules/css/css-float/ */
