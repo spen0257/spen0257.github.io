@@ -2,7 +2,7 @@ body{
   background-color:#aad4cf; 
   font-family: Arial, Helvetica, sans-serif; 
 }
-
+/* header */
 .wrapper{
     width: 1000px;
     margin:0 auto;
@@ -25,47 +25,131 @@ body{
   width: 100%;
   height: auto;
   }
-<!-- nav -->
-ul {
+
+/* Nav */
+
+nav {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: -4px;
+  padding: 0px 30px;
   overflow: hidden;
-  background-color: #333;
 }
-
-li {
+.topnav a {
+  display: inline-block;
+  color:black;
+  text-align: center;
+  padding: 14px 105px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 17px;
+}
+a {
   float: left;
-  border-right:1px solid #bbb;
+  border-right:2px solid #bbb;
 }
 
-li:last-child {
+a:last-child {
   border-right: none;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+a:hover {
+  background-color: #04AA6D;
+  color: beige;
+}
+/* body with img rap and paragraph*/
+
+.one {
+  position: relative;
+  top: 15px;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+.container-star{
+  position: relative;
+  top: 10px;
+  
+}
+.container-star img{
+  float: left;
+}
+
+/* ul facts about starfishes */
+
+.two {
+  position: relative;
+  top: 15px;
+}
+
+.container-list{
+  position: relative;
+  top: 10px;
+  
+}
+ul {
+  margin: 20px;
+  padding: 0px;
+}
+
+/* contact table  */
+.three {
+  position: relative;
+  top: 5px;
+}
+
+.container-lists{
+  position: relative;
+  top: 10px;
+  
+}
+.t-container {
+  border-radius: 0px;
+  background-color: azure;
+  padding: 15px;
+  border: 1px solid black;
+  
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+/* sub button */
+.four{ 
+  position: relative;
+  top: -20px;
+}
+.five{
+  position: relative;
+  top: -20px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* footer */
+footer {
+  text-align: right;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
 
 
 
 
 
-  /*.img {
-    width: 200px;
-    float: left;
-    margin:0 auto; 
-  }
-{
-    text-align: justify;
-}*/
 
 
 
@@ -73,9 +157,3 @@ li a:hover:not(.active) {
 
 
 
-
-
-/* remember to leave notes */
-
-
-   /* https://imdac.github.io/modules/css/css-float/ */
