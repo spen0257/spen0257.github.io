@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class ="wrapper"> 
+    <div class ="wrapper">
+    <header> 
     <div class="logo">
        <h1>logo</h1>      
        <!-- remove word logo -->
@@ -16,17 +17,17 @@
     </div>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Team</li>
-            <li>Contact</li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#teams">Teams</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div>
-            <form action="thanks.html" method="post">
-                <input id="query" type="search" name="fullname" placeholder="Search">
-            </form>
-            <!-- rember the icon goes in the form after placeholder -->
+            <form class="search-container">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form> 
         </div>
     </nav>
     </header>
@@ -127,38 +128,49 @@
 
         </div>
     </section>
-
-
-
-
-
-
+    <section>
+    <h2>Contact Us</h2>
+    <h3>Send Us a message</h3>
+    <div>
+        <form>
+        <label for="yname">Full Name</label>
+        <input type="text" id="yname" name="yourname" placeholder="Your name">
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <label for="yemail">Email</label>
+        <input type="text" id="yemail" name="youremail" placeholder="Your email">
+    
+        <label for="message">Your Message</label>
+        <textarea id="message"></textarea>
+        </form>
+    </div> 
+    
+    <button type="button" onclick="alert('Thank You')">Send</button>
+    </section>
+    <section>
+        <h2>Hours of operation</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>9 Am - 6 pm</td>
+                </tr>
+                <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>Closed</td>
+                </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+        &copy; Copyright Three Star Media, 2020
+        All images are taken from Unsplash  
+    </footer>
     </div>   
     
 </body>
