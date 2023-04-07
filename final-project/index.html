@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
+    <script src="https://kit.fontawesome.com/5d8db5c164.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class ="wrapper">
+<!-- Header contains logo, ul, and bottom with specific classes to style from the css -->
     <header> 
     <div class="logo">     
        <img src="images/logo.png" alt="Logo-image">
@@ -24,13 +26,14 @@
         <div>
             <form class="search-container">
                 <input type="text" placeholder="Search" name="search" id="search">
-                <button type="submit"><i class="fa-duotone fa-search"></i></button>
+                <button type="submit"><i class="fa fa-search"></i></button>
             </form> 
         </div>
     </nav>
     </header>
 
-    <!-- section one welcome -->
+<!-- Section one welcome has a background picture that will be applied in the css with a low-opacity banner over it with text. I commented out the background picture because its not needed in the html rn  -->
+
     <Section class="welcome"> 
         <!-- <img src="images/main-banner.jpg" alt="main-banner"> -->
         <div>
@@ -43,46 +46,47 @@
         </div>
     </Section> 
 
-    <!-- Section two About us -->
-    <Section>
+<!-- Section two About us -->
+    <Section class="about">
         <img src="images/about-us.jpg" alt="About Us">
         <h2>About Us</h2>
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea pariatur, sint ipsum dolorem magnam voluptatibus debitis eveniet officia, aperiam, dolor temporibus! Tempore voluptatibus magnam unde commodi eaque et tenetur eligendi.
         Nostrum qui recusandae dolore quaerat inventore quidem quia quis. Asperiores, pariatur similique nulla maiores assumenda hic. Sint, quod rerum! Perspiciatis minus illum optio, id possimus enim laboriosam ut inventore beatae?</P>
     </Section>
 
-    <!-- section 3 Our services  -->
-    <Section>
+<!--section 3 Our services contains five children so that grid can be applied in the css to move the boxes where it needs to be.-->
+
+    <Section class="services">
         <h2>Our services</h2>
-        <div>
+        <div class="service-1">
             <img src="images/digital.jpg" alt="digital">
             <h2>Digital Transformation</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, temporibus natus perferendis atque dolorum consequatur maxime dignissimos repudiandae ipsa debitis quasi alias voluptates beatae quis magni! Officia quasi dolorem tempora?</p>
             
             <button type="button" onclick="alert('Digital Plans')">Digital Plans</button>    
         </div>
-        <div>
+        <div class="service-2">
             <img src="images/marketing.jpg" alt="marketing">
             <h2>Marketing</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, temporibus natus perferendis atque dolorum consequatur maxime dignissimos repudiandae ipsa debitis quasi alias voluptates beatae quis magni! Officia quasi dolorem tempora?</p>
             
             <button type="button" onclick="alert('Marketing plans')">Marketing plans</button>    
         </div>
-        <div>
+        <div class="service-3">
             <img src="images/video.jpg" alt="Video Production">
             <h2>Video Production</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, temporibus natus perferendis atque dolorum consequatur maxime dignissimos repudiandae ipsa debitis quasi alias voluptates beatae quis magni! Officia quasi dolorem tempora?</p>
             
             <button type="button" onclick="alert('Video Plans')">Video Plans</button>    
         </div>
-        <div>
+        <div class="service-4">
             <img src="images/web.jpg" alt="Web Development">
             <h2>Web Development</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, temporibus natus perferendis atque dolorum consequatur maxime dignissimos repudiandae ipsa debitis quasi alias voluptates beatae quis magni! Officia quasi dolorem tempora?</p>
             
             <button type="button" onclick="alert('Web Plans')">Web Plans</button>    
         </div>
-        <div>
+        <div class="service-5">
             <img src="images/print.jpg" alt="Print">
             <h2>Print</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, temporibus natus perferendis atque dolorum consequatur maxime dignissimos repudiandae ipsa debitis quasi alias voluptates beatae quis magni! Officia quasi dolorem tempora?</p>
@@ -91,7 +95,7 @@
         </div>
     </Section>
 
-    <!-- Section 4 Vision  -->
+    <!-- Section 4 Vision background picture in the css and a wrapper layered on to aline the words for continuity-->
     <section class="wrapper three">
         <div>
             <!--<img src="/final-project/images/vision.jpg" alt="vision">-->
@@ -101,11 +105,11 @@
             <button type="button" onclick="alert('Learn More')">Learn More</button> 
         </div>
 
-    
     </section>
+<!--section 5 Our team contains 2 children so that flex can be applied in the css to move the text and img where its needed.-->
     <section>
         <h2>Our Team</h2>
-        <div>
+        <div class="team-1">
             <img src="images/john.jpg" alt="john">
             <h2>John Doe</h2>
             <h3>CEO and Co-owner</h3>
@@ -115,7 +119,7 @@
             Dolorum ullam aperiam, fuga ab harum quisquam! Natus incidunt distinctio deserunt? Corporis assumenda nam earum exercitationem vel rerum cupiditate iusto, necessitatibus quaerat molestiae minus perspiciatis illo. Dolore nulla ab quas!
 
         </div>
-        <div>
+        <div class="team-2">
             <img src="images/bob.jpg" alt="bob">
             <h2>Bob Rite</h2>
             <h3>CEO and Co-owner</h3>
@@ -126,12 +130,12 @@
 
         </div>
     </section>
-    <!-- section 5 -->
+<!-- section 5 contact us-->
     <section>
     <h2>Contact Us</h2>
     <h3>Send Us a message</h3>
     <div>
-        <form>
+        <form class="form-1">
         <label for="yname">Full Name</label>
         <input type="text" id="yname" name="yourname" placeholder="Your name">
     
@@ -146,7 +150,7 @@
     <button type="button" onclick="alert('Thank You')">Send</button>
     </section>
 
-    <!-- section 6 -->
+<!-- section 6 hours of operation -->
     <section>
         <h2>Hours of operation</h2>
         <table>
@@ -168,10 +172,12 @@
         </tbody>
       </table>
     </section>
+<!-- section 7 location -->
     <Section>
         <h2>Location</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44838.215266773674!2d-75.8013221028775!3d45.3813342873015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680843411621!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44838.215266773674!2d-75.8013221028775!3d45.3813342873015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680843411621!5m2!1sen!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </Section>
+<!-- section 8 footer -->
     <footer>
         &copy; Copyright Three Star Media, 2020
         All images are taken from Unsplash  
