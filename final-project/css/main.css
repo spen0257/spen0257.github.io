@@ -1,0 +1,111 @@
+/* Created a defalt be fore affecting changes */
+nav {
+    background: #222; 
+    color: #FFF; 
+    padding: 3em; 
+}
+
+/* Moving the li into place  */
+.bar{
+    margin: 0; 
+    padding: 0;
+}
+/* is it necessary to have two display blocks and why did the text center aline not work ? */
+.bar li, .search-container {
+    display: block;
+    padding: 1rem;
+    list-style-type: none;
+}
+.bar li a { 
+    display: block;
+    color:#c78c06;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+.bar, li.home a {
+    color: #222; 
+}
+.bar li.logo, ul.bar li.home { 
+    background-color: #c78c06; 
+}
+
+form.search-container {
+    display: flex;
+    flex-direction: row;
+}
+form.search-container input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    float: left;
+    /* width: calc(100% -20px); */
+    flex-grow: 1;
+    background: #f1f1f1;
+    position: ;    /*? its breaking*/
+}
+
+/* form.search-container {
+    box-sizing: border-box;  ?   */
+    
+form.search-container button {
+    float: left;
+    width: 40px;
+    /* padding: 10px; */
+    background: #222;
+    color:#c78c06;
+    font-size: 17px;
+    border: 1px solid #c78c06;
+    border-left: none;
+    cursor: pointer;
+}
+
+/* Section one welcome  */
+
+.welcome {
+    background-image: url(../images/main-banner.jpg);
+    padding: 100px 0; 
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    
+} 
+
+.welcome div {
+    padding: 48px;
+    /* background-color: rgba(0, 0, 0, 0.355); */
+    background-color: #2222225b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav { background: #222; color: #FFF; padding: 1em; list-style-type: none; }
+nav ul.wrapper { margin: 0; padding: 0; }
+nav ul.wrapper li, nav form.search-container { display: block; padding: 1em; }
+nav form.search-container { padding: 1em; }
+nav ul.wrapper li { text-align: center; }
+nav ul.wrapper li a, nav form.search-container button { color: #c78c06; }
+nav ul.wrapper li a { text-decoration: none; }
+nav ul.wrapper li.logo { text-align: left; }
+nav ul.wrapper li.logo, nav ul.wrapper li.home { background-color: #c78c06; }
+nav ul.wrapper li.home a { color: #222; }
+nav form.search-container input { width: 90%; }
+nav form.search-container button { width: 5%; } */
