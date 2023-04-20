@@ -81,37 +81,73 @@ form.search-container button {
 div h1,p.wone{
     color: white;
 }
-div h1{
-    font-size: 60px;
+div, h1{
+    font-size: 70px;
 
 }
-div p.wone{
+div, p.wone{
     font-size: 20px;
+    padding: 1em 0;
 }
-button.b1 {
+/* button settings */
+.b1{ 
     background-color: #c78c06;
+    color: #222;
     border: none;
     font-size: 25px;
     padding: 40px 30px;  
 }
+.b2{ 
+    background-color: #222;
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 40px 30px;  
+} 
+
 /* Section About */
 
 .about {
+    font-size: 20px;
     background-color: #ffe6ac;
-    padding: 3rem; 
-    position: center;
-    
+    padding: 3rem;  
 }
-/*  */
-img.fillspace { width: 100%; height: auto; }
-.sectionpad { padding: 0.5rem; }
+h2 {
+    font-size: 60px;
+    padding: 10px 0;
+}
+
+/* To aline photos and padding for the sections that need it. */
+img.fillspace { 
+    width: 100%; height: auto; 
+}
+
+.sectionpad { 
+    padding: 0.5rem; 
+}
+
+/* section 3 Our services */
+
+.about{
+    font-size: 20px;
+    background-color: #ffe6ac;  
+}
+div{
+    background-color: #ffe6ac;
+}
+
+
+
+
+
+
 
 @media screen and (min-width: 760px) {
     .sectionpad { padding: 3em; }
-    .bar, .bar li, .search-container { display: inline-block; }
+    .bar, .bar li, form.search-container { display: inline-block; }
     .bar li.logo { padding: 0; }
+    .about {background-color: aqua; }
 }
-
 
 
 
