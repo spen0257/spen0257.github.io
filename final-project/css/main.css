@@ -1,8 +1,10 @@
 /* Created a defalt be fore affecting changes */
+/* img { width: 100%; height: auto; } */
+
 nav {
     background: #222; 
-    color: #FFF; 
-    padding: 3em; 
+    color: #FFF;
+    /* padding: 3em;  */
 }
 
 /* Moving the li into place  */
@@ -42,7 +44,6 @@ form.search-container input {
     /* width: calc(100% -20px); */
     flex-grow: 1;
     background: #f1f1f1;
-    position: ;    /*? its breaking*/
 }
 
 /* form.search-container {
@@ -64,18 +65,58 @@ form.search-container button {
 
 .welcome {
     background-image: url(../images/main-banner.jpg);
-    padding: 100px 0; 
+    padding: 70px 0; 
     background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    
+    background-position: center;
+    background-repeat: no-repeat; 
 } 
 
 .welcome div {
-    padding: 48px;
-    /* background-color: rgba(0, 0, 0, 0.355); */
-    background-color: #2222225b;
+    background-color: #222222c5;
+    padding: 48px; 
 }
+    
+
+/* Section text and button */
+div h1,p.wone{
+    color: white;
+}
+div h1{
+    font-size: 60px;
+
+}
+div p.wone{
+    font-size: 20px;
+}
+button.b1 {
+    background-color: #c78c06;
+    border: none;
+    font-size: 25px;
+    padding: 40px 30px;  
+}
+/* Section About */
+
+.about {
+    background-color: #ffe6ac;
+    padding: 3rem; 
+    position: center;
+    
+}
+/*  */
+img.fillspace { width: 100%; height: auto; }
+.sectionpad { padding: 0.5rem; }
+
+@media screen and (min-width: 760px) {
+    .sectionpad { padding: 3em; }
+    .bar, .bar li, .search-container { display: inline-block; }
+    .bar li.logo { padding: 0; }
+}
+
+
+
+
+
+
 
 
 
