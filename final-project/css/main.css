@@ -1,10 +1,8 @@
-/* Created a defalt be fore affecting changes */
-/* img { width: 100%; height: auto; } */
 
 nav {
     background: #222; 
     color: #FFF;
-    /* padding: 3em;  */
+    padding: 3em; 
 }
 
 /* Moving the li into place  */
@@ -15,7 +13,7 @@ nav {
 /* is it necessary to have two display blocks and why did the text center aline not work ? */
 .bar li, .search-container {
     display: block;
-    padding: 1rem;
+    padding: .5rem;
     list-style-type: none;
 }
 .bar li a { 
@@ -24,6 +22,7 @@ nav {
     text-align: center;
     text-decoration: none;
     font-size: 25px;
+    padding: 0;
 }
 .bar, li.home a {
     color: #222; 
@@ -41,13 +40,10 @@ form.search-container input {
     font-size: 17px;
     border: 1px solid white;
     float: left;
-    /* width: calc(100% -20px); */
     flex-grow: 1;
     background: #f1f1f1;
 }
 
-/* form.search-container {
-    box-sizing: border-box;  ?   */
     
 form.search-container button {
     float: left;
@@ -74,10 +70,11 @@ form.search-container button {
 .welcome div {
     background-color: #222222c5;
     padding: 48px; 
+    border-bottom: none; 
 }
     
 
-/* Section text and button */
+/* Settings: paragraphs, headings, button and padding */
 div h1,p.wone{
     color: white;
 }
@@ -87,9 +84,18 @@ div, h1{
 }
 div, p.wone{
     font-size: 20px;
-    padding: 1em 0;
+    padding: 1rem 0;
 }
-/* button settings */
+div, p.wtwo{
+    padding: 1rem 0;
+}
+
+h2 {
+    font-size: 60px;
+    padding: 10px 0;
+}
+
+/* Settings:button  */
 .b1{ 
     background-color: #c78c06;
     color: #222;
@@ -104,9 +110,33 @@ div, p.wone{
     font-size: 25px;
     padding: 40px 30px;  
 } 
+.b3{ 
+    background-color: #244477;
+    color: white;
+    border-color: #c78c06;
+
+    font-size: 25px;
+    padding: 40px 30px;  
+    
+} 
+/* MOBILE PADDING */
+div{
+    background-color: #ffe6ac;
+    padding: 1rem; 
+    border-bottom: solid 1rem white; 
+}
+
+/* To aline photos and padding for the sections that need it. */
+img.fillspace { 
+    display:block;
+    width: 100%; 
+    height: auto;    
+}
+
+
+
 
 /* Section About */
-
 .about {
     font-size: 20px;
     background-color: #ffe6ac;
@@ -117,13 +147,8 @@ h2 {
     padding: 10px 0;
 }
 
-/* To aline photos and padding for the sections that need it. */
-img.fillspace { 
-    width: 100%; height: auto; 
-}
-
 .sectionpad { 
-    padding: 0.5rem; 
+    padding: 1rem; 
 }
 
 /* section 3 Our services */
@@ -132,25 +157,261 @@ img.fillspace {
     font-size: 20px;
     background-color: #ffe6ac;  
 }
-div{
-    background-color: #ffe6ac;
+
+/* service */
+
+
+
+
+/* vision section */
+div.vision {
+    background-image:url(../images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: white;
+}
+div.vision {
+    padding: 48px; 
+    border-bottom: solid 1rem white;
+}
+
+/* section 6 hours of operation */
+
+.contactus{
+    position: relative;
+    background-color: white;
+    
+}
+  .form-1{
+    background-color: white;
+    padding: 15px;    
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+  /* sub button */
+  .four{ 
+    position: relative;
+    top: -20px;
+  }
+  .five{
+    position: relative;
+    top: -20px;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=button]{
+    background-color: #222;
+    color: #c78c06;
+  }
+
+
+
+
+
+/* table section */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+  thead, tbody, tr, th {
+    border: 1px solid #1e1b1b;
+    text-align: left;
+    padding: 8px;
+}
+
+/* footer */
+footer{
+    background-color: #222;
+    color: #c78c06;
+}
+
+@media screen and (min-width: 760px){
+   
+    /* Settings */
+   
+.sectionpad {
+    padding: 3em;
+    max-width: 1200px;
+    margin: 0 auto; 
+    }
+    
+/* Nav section */
+
+.bar{ 
+    display:flex;
+    flex-direction: row; 
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav{
+    display:flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: 16px 16px;
+}
+.bar li a{
+    padding: 12px 10px;
+}
+
+/* Search */
+form.search-container.sectionpad {
+    display: flex;
+    flex-direction: row;
+}
+form.search-container.sectionpad input {
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid white;
+    float: left;
+    flex-grow: 1;
+    background: #f1f1f1;
+}
+
+form.search-container.sectionpad button {
+    float: left;
+    width: 40px;
+    background: #222;
+    color:#c78c06;
+    font-size: 17px;
+    border: 1px solid #c78c06;
+    border-left: none;
+    cursor: pointer;
+}
+
+/* welcome */
+.welcome,div {
+    padding: 25px; 
+    /* margin: 0 auto;   */
+}
+
+/* about */
+
+.about-1{
+    display: flex;
+    border-bottom: none;   
+}
+.aboutinfo{
+    flex-direction: column;
+    border-bottom: none;
+}  
+
+img.fillspace { 
+    display:flex;
+    width: 100%; 
+    height: auto;    
+}
+
+/* Services with grid */
+.services{ 
+    display: grid;
+    gap: 8px;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+    "top top top top top top" 
+    "da da da mb mb mb"
+    "da da da mb mb mb"
+    "da da da mb mb mb"
+    "vc vc wd wd pe pe"
+    "vc vc wd wd pe pe"
+    "vc vc wd wd pe pe"
+    }
+
+    .da {
+        grid-area:da;
+    }
+    .mb {
+        grid-area:mb;
+    }
+    .vc {
+        grid-area:vc;
+    }
+    .wd {
+        grid-area:wd;
+    }
+    .pe {
+        grid-area:pe;
+    }
+.dn{ 
+    font-size: 40px;
+    padding: 10px 0;
+}   
+
+/* Section teams */
+.team-1{
+    display: flex;   
+}
+.team-1info{
+    flex-direction: column;
+    border-bottom: none;
+} 
+.team-2{
+    display: flex;
+    flex-direction: row-reverse; 
+}  
+.team-2info {
+    flex-direction: column; 
+    border-bottom: none;      
+}  
+
+/* styleline  */
+.team-1info hr{
+    border: 1px solid #c78c06; 
+}
+.team-2info hr{
+    border: 1px solid #c78c06; 
+} 
+
+
+
+/* contact us  */
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
+    
+
+ 
 
 
+   
 
 
-
-@media screen and (min-width: 760px) {
-    .sectionpad { padding: 3em; }
-    .bar, .bar li, form.search-container { display: inline-block; }
-    .bar li.logo { padding: 0; }
-    .about {background-color: aqua; }
-}
-
-
-
+ 
 
 
 
@@ -174,15 +435,6 @@ div{
 
 
 
-/* nav { background: #222; color: #FFF; padding: 1em; list-style-type: none; }
-nav ul.wrapper { margin: 0; padding: 0; }
-nav ul.wrapper li, nav form.search-container { display: block; padding: 1em; }
-nav form.search-container { padding: 1em; }
-nav ul.wrapper li { text-align: center; }
-nav ul.wrapper li a, nav form.search-container button { color: #c78c06; }
-nav ul.wrapper li a { text-decoration: none; }
-nav ul.wrapper li.logo { text-align: left; }
-nav ul.wrapper li.logo, nav ul.wrapper li.home { background-color: #c78c06; }
-nav ul.wrapper li.home a { color: #222; }
-nav form.search-container input { width: 90%; }
-nav form.search-container button { width: 5%; } */
+
+
+
